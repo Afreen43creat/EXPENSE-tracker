@@ -44,7 +44,7 @@ function App() {
       <NewExpenses getNewExpenseData={getNewExpenseData} />
       <Expenses
         expenses={expenses}
-        func={(id) => setExpenses(expenses.filter((x) => id != x.id))}
+        func={(id) => setExpenses(expenses.filter((x) => id !== x.id))}
       />
     </div>
   );
